@@ -1,0 +1,11 @@
+Package: tabulka
+Type: Package
+Title: Custom, Handcrafted, Artisanal Tables 
+Version: 0.1.0
+Author: Ludmila Janda
+Maintainer: Ludmila Janda <ludmila.janda@gmail.com>
+Description: Makes nice tables that give counts and percents for cateogrical variables and min, Q1, mean, median, Q2, max for numeric variables (by some categorical variable).
+License: none
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
