@@ -1,13 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# dinner.table()
+# tabulka()
 
-The goal of dinner.table() is to make some nice tables.
+The goal of tabulka() is to make some nice tables.
 
 ## Installation
 
-You can install dinner.table from github with:
+You can install tabulka from github with:
 
 ``` r
 # install.packages("devtools")
@@ -24,7 +24,7 @@ arranged using the percent in descending order so that the biggest
 categories are at the top of the table.
 
 ``` r
-dinner.table::n_pct(diamonds, cut)
+tabulka::n_pct(diamonds, cut)
 ```
 
 | cut       | Number | Percent |
@@ -43,7 +43,7 @@ arranged using the factor levels so that the preferred order is
 maintained.
 
 ``` r
-dinner.table::n_pct_fct(diamonds, cut)
+tabulka::n_pct_fct(diamonds, cut)
 ```
 
 | cut       | Number | Percent |
@@ -61,7 +61,7 @@ Median, Mean, and Q3 for a continous variable that is broken down by
 categories from a categorical variable
 
 ``` r
-dinner.table::shelve(diamonds, cut, price)
+tabulka::shelve(diamonds, cut, price)
 ```
 
 | Group     |       Q1 |  Median |     Mean |       Q3 |    Max |

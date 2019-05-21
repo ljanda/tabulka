@@ -31,7 +31,7 @@ devtools::install_github("ljanda/tabulka")
 ```{r, warning=FALSE, message=FALSE, echo=FALSE, include=FALSE}
 library(tidyverse)
 library(kableExtra)
-devtools::install_bitbucket("ludaj/tabulka")
+devtools::install_github("ljanda/tabulka")
 library(tabulka)
 data("diamonds")
 ```
