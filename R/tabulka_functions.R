@@ -13,7 +13,7 @@ n_pct <- function(df, var1) {
   df %>%
     group_by(!!var1) %>%
     summarise(Number = n()) %>%
-    mutate(Percent = round((Number/sum(Number, na.rm = T)*100), 2)) %>%
+    mutate(Percent = round((Number/sum(Number, na.rm = TRUE)*100), 2)) %>%
     arrange(desc(Percent)) %>%
     kable(format = "markdown", format.args = list(big.mark = ',')) %>%
     kable_styling(full_width = F, position = "left")
@@ -34,7 +34,7 @@ n_pct_fct <- function(df, var1) {
   df %>%
     group_by(!!var1) %>%
     summarise(Number = n()) %>%
-    mutate(Percent = round((Number/sum(Number, na.rm = T)*100), 2)) %>%
+    mutate(Percent = round((Number/sum(Number, na.rm = TRUE)*100), 2)) %>%
     arrange(!!var1) %>%
     kable(format = "markdown", format.args = list(big.mark = ',')) %>%
     kable_styling(full_width = F, position = "left")
@@ -63,5 +63,5 @@ shelve <- function(df, var1, var2) {
               Max = round(max(!!var2), 2)) %>%
     kable(format = "markdown", format.args = list(big.mark = ','),
           col.names = c("Group", "Q1", "Median", "Mean", "Q3", "Max")) %>%
-    kable_styling(full_width = F, position = "left")
+    kable_styling(full_width = FALSE, position = "left")
 }
