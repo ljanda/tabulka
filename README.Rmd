@@ -23,7 +23,7 @@ You can install tabulka from github with:
 
 ```R
 # install.packages("devtools")
-devtools::install_github("ljanda/tabulka")
+remotes::install_github("ljanda/tabulka")
 ```
 
 ## Examples
